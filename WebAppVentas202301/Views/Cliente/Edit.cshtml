@@ -1,0 +1,59 @@
+﻿@model WebAppVentas202301.Models.TbCliente
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<html>
+    <body>
+    <form asp-controller="Cliente" asp-action="EditDetails" method="post">
+        <div class="form-group">
+            <input asp-for="CodCli" class="form-control" id="formGroupExampleInput" placeholder="Id" type="hidden">
+            <span asp-validation-for="CodCli" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Razon Social</label>
+            <input asp-for="RazSocCli" class="form-control" id="formGroupExampleInput2" placeholder="Rason Social">
+            <span asp-validation-for="RazSocCli" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Direccion</label>
+            <input asp-for="DirCli" class="form-control" id="formGroupExampleInput2" placeholder="Direccion">
+            <span asp-validation-for="DirCli" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Telefono</label>
+            <input asp-for="TlfCli" class="form-control" id="formGroupExampleInput2" placeholder="Telefono">
+            <span asp-validation-for="TlfCli" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="formGroupExampleInput2">RUC</label>
+            <input asp-for="RucCli" class="form-control" id="formGroupExampleInput2" placeholder="RUC">
+            <span asp-validation-for="RucCli" class="text-danger"></span>
+        </div>
+        <!--       
+        <div class="form-group">
+            <label for="formGroupExampleInput2">FECHA DE REGISTRO</label>
+            <input asp-for="FecReg" class="form-control" id="formGroupExampleInput2" placeholder="FECHA DE REGISTRO">
+            <span asp-validation-for="FecReg" class="text-danger"></span>
+        </div>
+        -->
+        <div class="form-group">
+            <label for="formGroupExampleInput2">TIPO DE CLIENTE</label>
+            <input asp-for="TipCli" class="form-control" id="formGroupExampleInput2" placeholder="TIPO DE CLIENTE">
+            <span asp-validation-for="TipCli" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">CONTACTO</label>
+            <input asp-for="Contacto" class="form-control" id="formGroupExampleInput2" placeholder="CONTACTO">
+            <span asp-validation-for="Contacto" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary" value="btn" name="editar" data-toggle="modal" data-target="#exampleModal">Modificar</button>
+        </div>
+
+    </form>
+
+    </body>
+</html>

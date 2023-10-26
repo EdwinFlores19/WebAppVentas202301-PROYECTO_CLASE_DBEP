@@ -1,0 +1,24 @@
+﻿@model WebAppVentas202301.Models.Usuario
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<body>
+<div class="container">
+    <form class="form-signin" action="/Usuario/Validar" method="post">
+        <h2 class="form-signin-heading">Sign in</h2>
+        <label for="inputEmail" class="sr-only">Username</label>
+        <input asp-for="UsuUsuario" type="text" class="form-control" placeholder="Username"
+               id="username" />
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input asp-for="UsuClave" type="password" class="form-control" placeholder="Password"
+               id="password" />
+        <button class="btn btn-lg btn-primary btn-block" type="submit">
+            <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Sign in
+        </button>
+            <span><a href="/Cliente/Index">Registrate</a></span>
+    </form>
+</div> <!-- /container -->
+</body>
